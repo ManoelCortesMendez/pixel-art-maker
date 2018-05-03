@@ -19,8 +19,6 @@ h1 {
 
 /*Canvas*/
 table {
-    width: 480px;
-    height: 480px;
     background-color: white;
     border: 1px solid white;
     border-collapse: collapse; /*Remove gutters between cells*/
@@ -29,7 +27,9 @@ table {
 }
 
 td {
-    border: 1px dotted #29B6F6;
+    width: 10px;
+    height: 10px;
+    border: 1px dotted #73E8FF;
 }
 
 /*Tools*/
