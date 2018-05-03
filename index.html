@@ -6,10 +6,59 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
     <h1>Pixel Art Maker</h1>
-    <table id="canvas"></table>
-    <div id="tools"></div>
+
+    <table id="canvas">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <div id="tools">
+
+        <form id="input-button-combo">
+            <input type="number" class="input-field" id="width-input-field" placeholder="W">
+            <input type="number" class="input-field" id="height-input-field" placeholder="H">
+            <!-- Prefer input button over button in forms -->
+            <input id="set-size-button" type="button" value="Set Size">
+        </form>
+
+        <!-- Prevent default submit with type=button -->
+        <button type="button" id="save" class="blue-box">Save Canvas</button>
+
+        <button type="button" id="clear" class="blue-box">Clear Canvas</button>
+
+        <div id="container-color-picker">
+            <button type="button" id="color-picker-label" class="blue-box">Pick Color</button>
+            <!-- Couldn't remove color picker's borders, so made it invisible and used JS to bind div container to color picker -->
+            <div id="container-color-input">
+                <input type="color" id="color-input">
+            </div>
+        </div>
+
+    </div>
 
     <script src="designs.js"></script>
 </body>
