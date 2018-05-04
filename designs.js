@@ -5,6 +5,9 @@
     const widthInputField = document.getElementById('width-input-field');
     const heightInputField = document.getElementById('height-input-field');
     const table = document.getElementById('canvas');
+    const colorPicker = document.getElementById('color-input');
+    const colorPickerContainer = document.getElementById('container-color-input');
+    let colorPicked = "#000000";
 
     /*Declare functions*/
     function makeGrid (aWidth, aHeight) {
@@ -20,4 +23,10 @@
     setSizeButton.addEventListener('click', function () {
         makeGrid(widthInputField.value, heightInputField.value);
     });
+    /*Trigger listener on input color change*/
+    colorPicker.addEventListener('input', function () {
+        colorPicked = this.value;
+        colorPickerContainer.style.background = colorPicked;
+    });
+    
 })();
