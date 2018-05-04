@@ -42,10 +42,9 @@ td {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 40px;
-    grid-row-gap: 16px;
+    grid-row-gap: 24px;
     grid-template-areas:
     "size color"
-    "save color"
     "clear color";
 }
 
@@ -114,13 +113,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #container-color-input {
-    height: 96px;
+    height: 56px;
     background-color: black;
     border-radius: 0 0 4px 4px;
 }
 
 #color-input {
     width: 186px;
-    height: 92px;
+    height: 52px;
     opacity: 0; /*Hide ugly color picker but retain its functionality*/
 }
