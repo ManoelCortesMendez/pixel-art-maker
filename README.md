@@ -10,6 +10,12 @@
 
 Built with:
 
-* Vanilla HTML, CSS, and JS
-* CSS flex-box layout --- for main layout
-* CSS grid layout --- for tool palette
+* Vanilla HTML, CSS, and JS.
+* CSS flex-box layout --- for main layout.
+* CSS grid layout --- for tool palette.
+
+## TODO
+
+* Reset cell to white on double click.
+* Draw rectangles by dragging.
+* Save canvas as image.
