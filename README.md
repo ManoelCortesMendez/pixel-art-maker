@@ -1,16 +1,15 @@
-# Pixel Art Maker Project
+# Pixel Art Maker
 
-## Table of Contents
+## How to use this project
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+1. Set the size of the canvas: height and width.
+2. Pick a color.
+3. Create pixel art!
 
-## Instructions
+## Implementation Details
 
-To get started, open `designs.js` and start building out the app's functionality.
+Built with:
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+* Vanilla HTML, CSS, and JS
+* CSS flex-box layout --- for main layout
+* CSS grid layout --- for tool palette
