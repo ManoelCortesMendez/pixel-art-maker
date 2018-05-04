@@ -10,11 +10,11 @@
     let colorPicked = "#000000";
     const clearButton = document.getElementById('clear');
 
-    /*Declare functions*/
-    // TODO: if I don't use input object, I shouldn't use table obj in fun
-    function makeGrid (aWidth, aHeight) {
+    /*Declare main function*/
+    function makeGrid (aTable, aWidth, aHeight) {
+        aTable.innerHTML = ''; //Reset to empty table
         for (let i = 0; i < aHeight; i++) {
-            const row = table.appendChild(document.createElement('tr'));
+            const row = aTable.appendChild(document.createElement('tr'));
             for (let j = 0; j < aWidth; j++) {
                 row.appendChild(document.createElement('td'));
             }
@@ -23,15 +23,13 @@
 
     /*Add event listeners*/
     setSizeButton.addEventListener('click', function () {
-        table.innerHTML = ''; //Reset table to empty
-        makeGrid(widthInputField.value, heightInputField.value);
+        makeGrid(table, widthInputField.value, heightInputField.value);
     });
-    /*Trigger listener on input color change*/
+    //Trigger listener on color pick
     colorPicker.addEventListener('input', function () {
         colorPicked = this.value;
         colorPickerContainer.style.background = colorPicked;
     });
-    // TODO: Change listeners to call dedicated functions? Or leave as is?
     table.addEventListener('click', function (event) {
         if (event.target.nodeName === 'TD') {
             const cellClicked = event.target;
